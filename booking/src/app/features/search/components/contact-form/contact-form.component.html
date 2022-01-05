@@ -1,0 +1,5 @@
+<form #contactForm="ngForm" (submit)=send.emit(contactForm.form)>
+    <input type="text" placeholder="Your email*" [ngModel] name="mail" required>
+    <textarea cols="20"  [ngModel] name="msg" rows="6" placeholder="Your message*" required></textarea>
+    <button type="submit" [disabled]=contactForm.invalid>SEND</button>
+  </form>

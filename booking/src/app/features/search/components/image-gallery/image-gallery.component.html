@@ -1,0 +1,6 @@
+<img [src]="activeImg" width="100%" height="150">
+<div class="nested">
+  <div *ngFor="let img of active?.images"  (click)="activeImg = img">
+      <img [src]="img" width="100%">
+  </div>
+</div>

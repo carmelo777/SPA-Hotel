@@ -1,0 +1,31 @@
+
+.card {
+  background: white;
+  border-radius: 5px;
+  @media only screen and (max-width: 767px) {
+    margin-top: 20px; 
+  }
+  &.scrollable {
+    overflow: auto;
+  }
+
+  .content {
+    padding: 0px 20px;
+  }
+
+  .title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  &.error {
+    background-color: lightcoral;
+  }  
+}
+
+
+

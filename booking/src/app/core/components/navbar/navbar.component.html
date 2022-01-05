@@ -1,0 +1,13 @@
+  <!--navigation bar-->
+  <div class="navigation" *ngIf="auth.isLogged()">
+    <div class="horiz-grid">
+      <div class="logo">BOOKING</div>
+      <div class="horiz-grid">
+        <span class="btn" [routerLink]="['/search']" routerLinkActive="active" >SEARCH</span>
+        <span class="btn" [routerLink]="['/cart']" routerLinkActive="active" > CART ({{cartService.items.length}}) </span>
+        <span class="btn" (click)="auth.loguot()">LOGOUT</span>
+      </div>
+      <em>{{auth.data?.name}}</em>
+    </div>
+  </div>
+

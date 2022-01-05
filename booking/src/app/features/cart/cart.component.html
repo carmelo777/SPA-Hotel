@@ -1,0 +1,24 @@
+<!--CONTENT-->
+  <div class="wrapper">
+    <div class="card">
+      <div class="title">Cart ({{cartService.items.length}})</div>
+      <div class="content">
+
+        <div class="horiz-grid separator"
+        *ngFor="let item of cartService.items">
+          <div class="font-medium">{{item.hotel.name}}</div>
+          <div>{{item.room.label}}</div>
+          <div>{{item.room.price}}</div>
+          <div>{{item.room.price}}</div>
+          <div (click)="cartService.removedFromCart(item)"><i class="icon ion-ios-trash"></i></div>
+        </div>
+        <button *ngIf="cartService.items.length" (click)="cartService.proceeed()">Proceed</button>
+        <br>
+        <br>
+        <div class="horiz-grid">
+          <div></div>
+          <em>{{cartService.items.length}} Items</em>
+        </div>
+      </div>
+    </div>
+  </div>

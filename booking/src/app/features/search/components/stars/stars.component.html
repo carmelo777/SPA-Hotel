@@ -1,0 +1,9 @@
+<div>
+    <i class="icon" *ngFor="let star of (5 | intToArray); let i = index" 
+    [ngClass]="{
+      'ion-ios-star': i < stars,
+      'ion-ios-star-outline': i >= stars
+     }">
+  </i>
+
+  </div>

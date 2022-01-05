@@ -1,0 +1,9 @@
+<div>
+    <div class="title" *ngIf="title">{{title}}</div>
+    <div [ngClass]="{
+        'content':padding,
+        'center': centeredContent
+    }">
+        <ng-content></ng-content>
+    </div>
+</div>

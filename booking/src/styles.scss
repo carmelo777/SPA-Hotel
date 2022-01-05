@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import './css/all.scss';
+
+.cursor {
+    cursor: pointer;
+}
+
+.active {
+    padding-left: 10px;
+    color: #00AE76;
+    font-weight: 600;
+  }
+
+  .separator {
+    padding: 10px 0;
+  }
